@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="6"
+    android:orientation="horizontal"
+    android:background="@drawable/rc_bgwhite"
+    android:padding="10dp"
+    android:elevation="@dimen/regularElevation">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvOrderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkText"
+            android:textSize="@dimen/semiBigText"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Laporan Kerusakan"/>
+        <TextView
+            android:id="@+id/tvOrderDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRegularText"
+            android:textSize="@dimen/smallText"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Pesan perbaikan wifi indihome"/>
+
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorRegularText"
+            android:textSize="@dimen/smallText"
+            android:text="Nama: "
+            android:fontFamily="@font/raleway_medium"/>
+
+        <TextView
+            android:id="@+id/tvCustomerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRegularText"
+            android:textSize="@dimen/smallText"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Alamat: " />
+        <TextView
+            android:id="@+id/tvOrderTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRegularText"
+            android:textSize="@dimen/smallText"
+            android:fontFamily="@font/raleway_medium"
+            android:text="21 Juli 2018"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Detail"
+        android:textSize="@dimen/regularText"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_vertical|end"/>
+</LinearLayout>

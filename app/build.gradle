@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+
+androidExtensions {
+    experimental = true
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.eways.agent"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 10
+        versionName "2.4"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            res {
+                srcDirs 'src/main/res',
+                        'src/main/java/com/eways/agent/inventory/resources',
+                        'src/main/java/com/eways/agent/user/resources',
+                        'src/main/java/com/eways/agent/kabarcluster/resources',
+                        'src/main/java/com/eways/agent/notification/resources',
+                        'src/main/java/com/eways/agent/order/resources',
+                        'src/main/java/com/eways/agent/dashboard/resources'
+            }
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //MULTIDEX
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //KOTLIN-COUROUTINES
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.2"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.2"
+
+    //RETROFIT
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation "com.squareup.retrofit2:converter-moshi:2.4.0"
+
+    //OKHTTP
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.4.0'
+
+    //MOCKITTO
+    testImplementation 'com.nhaarman:mockito-kotlin:1.5.0'
+    testImplementation 'org.mockito:mockito-inline:2.22.0'
+    testImplementation 'org.mockito:mockito-core:2.22.0'
+
+    //STETHO
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+
+    //FIREBASE
+    implementation 'com.google.firebase:firebase-core:17.2.3'
+    implementation 'com.google.firebase:firebase-firestore:21.4.1'
+    implementation 'com.firebaseui:firebase-ui-auth:3.3.1'
+    implementation 'com.google.firebase:firebase-messaging:20.1.3'
+
+    //GLIDE
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    //GSON
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    implementation 'com.google.android.material:material:1.1.0-alpha09'
+    implementation 'com.github.f0ris.sweetalert:library:1.5.6'
+    implementation 'com.github.bachors:Android-Prefix-Input:1.1'
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation project(path: ':infrastructures')
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/horizontalBoundary"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_register_otp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/horizontalBoundary"
+                android:layout_marginBottom="10dp"
+                android:text="Selangkah lagi!"
+                android:textColor="@color/colorRegularText"
+                android:fontFamily="@font/raleway_medium"
+                android:textSize="@dimen/title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/horizontalBoundary"
+                android:layout_marginBottom="10dp"
+                android:text="Masukkan kode yang anda terima"
+                android:textColor="@color/colorRegularText"
+                android:fontFamily="@font/raleway_medium"
+                android:textSize="@dimen/regularText"/>
+            <com.mukesh.OtpView
+                android:id="@+id/otpRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/horizontalBoundary"
+                android:fontFamily="@font/raleway_medium"
+                android:textSize="@dimen/regularText"
+                android:inputType="number"
+                android:textColor="@color/colorRegularText"
+                app:itemCount="4"
+                app:viewType="line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:id="@+id/tvConfirmation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:layout_alignParentBottom="true"
+                    android:paddingVertical="15dp"
+                    android:background="@color/lightGrey"
+                    android:text="Konfirmasi"
+                    android:textSize="@dimen/regularText"
+                    android:fontFamily="@font/raleway_medium"
+                    android:gravity="center"
+                    android:textColor="@color/colorRegularText"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

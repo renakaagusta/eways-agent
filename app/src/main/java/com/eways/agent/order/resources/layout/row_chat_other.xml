@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="5dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="60dp"
+    android:clipToPadding="false"
+    android:orientation="horizontal">
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/ivUser"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/user_agent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:paddingStart="8dp"
+        android:clipToPadding="false">
+        <TextView
+            android:id="@+id/tvOthersMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_chat_other"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:elevation="@dimen/regularElevation"
+            android:layout_gravity="start"
+            android:text="uiuaa ding ding bala bala ding ding ding uiuaa "
+            android:textSize="@dimen/regularText"
+            android:fontFamily="@font/raleway_medium"/>
+        <TextView
+            android:id="@+id/tvOthersMessageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Hari ini, 07.02 WIB"
+            android:layout_gravity="start"
+            android:fontFamily="@font/raleway_regular"
+            android:textSize="@dimen/smallText"/>
+    </LinearLayout>
+</LinearLayout>

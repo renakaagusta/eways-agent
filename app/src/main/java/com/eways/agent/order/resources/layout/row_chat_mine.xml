@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="5dp"
+    android:paddingEnd="@dimen/horizontalBoundary"
+    android:paddingStart="60dp"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvMyMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chat_mine"
+        android:textColor="@color/colorRegularText"
+        android:padding="10dp"
+        android:elevation="@dimen/regularElevation"
+        android:layout_gravity="end"
+        android:textSize="@dimen/regularText"
+        android:text="uiuaa ding ding bala bala ding ding ding uiuaa "
+        android:fontFamily="@font/raleway_medium"/>
+    <TextView
+        android:id="@+id/tvMyMessageTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Hari ini, 07.02 WIB"
+        android:layout_gravity="end"
+        android:fontFamily="@font/raleway_regular"
+        android:textSize="@dimen/smallText"/>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">E-ways Agent</string>
+    <string name="welcomesentence">Dengan masuk atau mendaftar, kamu menyetujui <font color='#fb282a'>Ketentuan Layanan</font> dan <font color='#fb282a'>Kebijakan Privasi</font></string>
+
+    <!--user-->
+    <string name="keluar">Keluar</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="nik">NIK</string>
+    <string name="nomor_hp">Nomor HP</string>
+    <string name="email">E-mail</string>
+    <string name="alamat">Alamat</string>
+    <string name="id_pegawai">ID Pegawai</string>
+    <string name="cluster">Cluster</string>
+    <string name="ketentuan_layanan">Ketentuan Layanan</string>
+    <string name="kebijakan_privasi">Kebijakan Privasi</string>
+    <string name="bantuan">Bantuan</string>
+
+    <!-- order-->
+    <string name="pickup_ticket">Pickup Ticket</string>
+    <string name="psb">PSB</string>
+    <string name="get_customer">Get Customer</string>
+    <string name="ganti_paket">Ganti Paket</string>
+    <string name="titip_paket">Titip Paket</string>
+    <string name="titip_belanja">Titip Belanja</string>
+    <string name="sopp">SOPP</string>
+    <string name="layanan_bebas">Layanan Bebas</string>
+
+    <string name="saldo_ewallet">Saldo E-Wallet</string>
+    <string name="catatan_agen">Catatan Agen</string>
+    <string name="input">Input</string>
+    <string name="chat_pelanggan">Chat Pelanggan</string>
+    <string name="selesai">Selesai</string>
+    <string name="konfirmasi_pembayaran">Konfirmasi Pembayaran</string>
+    <string name="no_riwayat">Anda tidak memiliki riwayat pemesanan</string>
+    <string name="no_onprogress">Tidak ada pemesanan yang sedang dilayani</string>
+
+
+    <string name="chat_hint">Tulis pesan anda disini&#8230;</string>
+    <string name="servicepacket_hint">Pilih paket layanan yang anda inginkan</string>
+    <string name="currentservicepaket_hint">Pilih paket layanan yang anda gunakan</string>
+    <string name="sopp_hint">Pilih tagihan yang ingin anda bayar</string>
+    <string name="getcustomer_hint">Pilih Layanan</string>
+
+
+    <string name="agen">Agen</string>
+
+    <!-- kabar cluster-->
+    <string name="kabar_cluster">Kabar Cluster</string>
+    <string name="kabar_cluster_welcome">Selamat datang di kabar cluster!</string>
+    <string name="post">POST</string>p
+    <string name="pin">Pinned Post by Admin</string>
+    <string name="contentHint">Apa yang anda pikirkan?</string>
+    <string name="commentHint">Tulis komentar anda di sini</string>
+
+    <!-- notifikasi -->
+    <string name="no_notification">Tidak ada notifikasi yang masuk</string>
+
+    <!--lain-lain-->
+    <string name="lainnya">Lainnya</string>
+    <string name="dummy">DUMMY</string>
+</resources>

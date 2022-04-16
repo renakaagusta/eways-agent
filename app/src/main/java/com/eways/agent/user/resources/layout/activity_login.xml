@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginHorizontal="@dimen/horizontalBoundary"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/ic_login"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/horizontalBoundary"
+                android:layout_marginBottom="10dp"
+                android:text="Silahkan masuk dengan Nomor HP dan NIK yang terdaftar"
+                android:textColor="@color/colorRegularText"
+                android:fontFamily="@font/raleway_medium"
+                android:textSize="@dimen/title"/>
+
+            <com.eways.agent.utils.customtextinputlayout.TextInputLayoutDrawable
+                android:id="@+id/tildPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/horizontalBoundary">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nomor_hp"
+                    android:textColorHighlight="@color/colorRegularText"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="@color/colorRegularText"
+                    android:drawableLeft="@drawable/ic_62"
+                    android:drawablePadding="4dp"/>
+            </com.eways.agent.utils.customtextinputlayout.TextInputLayoutDrawable>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmployeeID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/horizontalBoundary">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietEmployeeID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nik"
+                    android:textColorHighlight="@color/colorRegularText"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="@color/colorRegularText"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingVertical="15dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Lanjut"
+                    android:textSize="@dimen/regularText"
+                    android:fontFamily="@font/raleway_medium"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

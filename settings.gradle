@@ -1,0 +1,2 @@
+rootProject.name='eways-agent'
+include ':app', ':infrastructures'

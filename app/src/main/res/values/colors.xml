@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fb282a</color>
+    <color name="colorPrimaryDark">#bf0000</color>
+    <color name="colorAccent">#008148</color>
+
+    <color name="white">#FFFFFF</color> <!--uda sesuai -->
+    <color name="darkGrey">#989898</color>
+    <color name="lightGrey">#D3D3D3</color>
+    <color name="colorRegularText">#545454</color> <!--uda sesuai -->
+    <color name="colorLightText">#757575</color> <!--uda sesuai -->
+    <color name="darkText">#313131</color>
+    <color name="colorLine">#707070</color>
+
+    <color name="orderTextBackground">#82EEEEEE</color> <!--uda sesuai -->
+    <color name="orderTextLine">#BCBCBC</color> <!--uda sesuai -->
+    <color name="colorHint">#70757575</color>
+    <color name="orange">#FF8800</color>
+</resources>

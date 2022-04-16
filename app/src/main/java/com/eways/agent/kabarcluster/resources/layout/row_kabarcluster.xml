@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="12dp"
+    android:background="@color/white">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="@dimen/horizontalBoundary"
+        android:layout_marginVertical="4dp"
+        android:src="@drawable/user_agent"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="@dimen/horizontalBoundary"
+        android:layout_toEndOf="@id/imgProfile"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/tvPinnedPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:text="@string/pin"
+            android:textColor="@color/darkGrey"
+            android:textSize="@dimen/smallText"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tvCreator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Nama User"
+            android:textColor="@color/darkText"
+            android:textSize="@dimen/regularText" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/raleway_medium"
+            android:text="konten"
+            android:textColor="@color/colorRegularText"
+            android:textSize="@dimen/smallText" />
+        <TextView
+            android:id="@+id/tvCreatedAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/raleway_regular"
+            android:textColor="@color/colorRegularText"
+            android:textSize="@dimen/smallText" />
+        <LinearLayout
+            android:id="@+id/llCommentCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_comment"
+                android:tint="@color/colorRegularText"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/tvCommentCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="0 Komentar"
+                android:textColor="@color/colorRegularText"
+                android:fontFamily="@font/raleway_medium"
+                android:textSize="@dimen/smallText"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
